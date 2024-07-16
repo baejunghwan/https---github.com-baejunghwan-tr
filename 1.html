@@ -88,7 +88,24 @@
     // ?내가 헷갈렸던 개념
     // var a; 하면 왜 할당을 안했는데 이렇게 혼자 쓰이지 > 그냥 a라는 냄비만 만든것.
     // 
+    var int1 = 30;
+    var int2 = 20;
+    
+    function bigNumberWhich(num1,num2) //새로 bigNumberWhich 함수로 정의함. num1, num2값을 새로 넣음
+        let result; // result에 let안으로 돌게 설정함. 
+        if(num1 > num2) {
+            result = num1; 
+        else 
+            result = num2; // 어차피 조건이 둘중 큰수를 고르는것이므로. 하나if 하나else해놓으면 된다.
+        return result; 
+    } 
+        
+    function display(num1, num2, bigNumber){
+        alert(num1 + " 와" + num2 + " 중 큰수는 " + bigNumber + "입니다.");
 
+        var num = bigNumberWhich(int1, int2);
+        display(int1, int2, num); //display(int1, int2, bigNumberWhich(int1,in2););
+    }
 
 </script>
 
